@@ -1,0 +1,445 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Beautiful Beginnings</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/mobile.css"/>
+    <link rel="stylesheet" href="css/styling.css"/>
+    <link rel="stylesheet" href="css/general.css"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Allura&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alex+Brush&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="icon" type="image" alt="beautifulBeginnings" href="./images/icon_url.jpg"/>
+
+</head> 
+<body>
+    <div class="page-wrap">
+        <header class="page-header">
+            <div class="header-top">
+                <div class="contact-box">
+                    <p><em>Call us at: <strong>708-246-1212</strong></em> <a href="#" class="button button--primary">Live Chat Now</a></p>
+                </div>
+
+                <div class="member-widget">
+                    <ul class="login-links">
+                        <li><a href="#">Baby Registry</a></li>
+                        <li><a href="#">Login/Register</a></li>
+                        <li class="member-widget__cart">
+                         <div id="carticon">
+                           <a href="#">
+                            <img  src="images/shopping-cart.png" style="width:30px;height:26px;" id="myShoppingCart">
+                            <span class='badge badge-warning' id='lblCartCount'> 5 </span>
+                        </a>
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                  <span class="close">&times;</span>
+                                  <h2 class="text-black">Shopping Bag</h2>
+                              </div>
+                              <div class="modal-body">
+                                
+                                    <div id="item1">
+                                        <p> Alexis Crib with Rose Garland by Newport Cottages</p>
+                                        <p>Qty: 4</p>
+                                    </div>
+                                   <div id="item2">
+                                        <p> Hazel Ruffle Top and Capri Set</p>
+                                        <p>Qty: 1</p>
+                                    </div>
+                                   <p> SUBTOTAL<strong>$ 2103.92</strong></p> <br/> 
+                             
+                              </div>
+                              <div class="modal-footer">
+                                  <h3 class="text-black">
+                                      <a href="#" class="button button--primary" onclick="continueShopping()">CONTINUE SHOPPING</a>&nbsp;&nbsp;
+                                      <a href="#" class="button button--primary">CHECKOUT</a>
+                                  </h3>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="header-toggles--mobile">
+                    <a href="#">
+                        <!-- need a cart icon -->
+                        <span class="visually-hidden">Go to Cart</span>
+                    </a>
+                    <a href="#" class="menu-toggle">
+                        <span class="visually-hidden">Toggle Menu</span>
+                    </a>
+                </div>
+
+            </div>
+            <div class="header-middle"  id="home">
+
+                <div class="site-motto">Children Our greatest earthly blessing.</div>
+
+                <div class="site-logo">
+                    <img src="images/bb-logo.png" alt="Beautiful Beginnings: Celebrating baby and child">
+                </div>
+
+                <div class="site-search">
+                    <form class="site-search__form">
+                        <label for="headerSiteSeach" class="visually-hidden">Search this site...</label>
+                        <input id="headerSiteSearch" type="search" placeholder="Search"/>
+                        <button class="site-search__button">
+                            <span class="visually-hidden">Submit Search</span> 
+                            <img src="images/search_icon.png" style="width:16px;height:16px;">
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+            <div class="header-bottom">
+
+                <div class="site-search">
+                    <form class="site-search__form">
+                        <label for="headerMenuSiteSeach" class="visually-hidden">Search this site...</label>
+                        <input id="headerMenuSiteSeach" type="search" placeholder="Search this site.."/>
+                        <button class="site-search__button">
+                            <span class="visually-hidden">Submit Search</span>
+                            <img src="images/search_icon.png" />
+                        </button>
+                    </form>
+                </div>
+
+                <nav class="main-navigation" id="myTopnav">
+
+                    <ul>
+                        <li>
+                            <div class="dropdown">
+                              <button onclick="myFunction()" class="dropbtn">☰</button>
+                              <div id="myDropdown" class="dropdown-content">
+                                <a href="#home">Baby Apparel</a>
+                                <a href="#about">Baby Gifts</a>
+                                <a href="#contact">Christening</a>
+                                <a href="#home">Silver</a>
+                                <a href="#about">All Christening</a>
+                                <a href="#contact">Furniture</a>
+                                <a href="#about">Bedding</a>
+                                <a href="#contact">Decor</a>
+                                <a href="#about">Lighting</a>
+                                <a href="#contact">Sale</a>
+                                <a href="#contact">Brands</a>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li>
+                        <a href="#">Baby Apparel</a>
+                        <ul>
+                            <li><a href="#">Bodysuits</a>
+                            </li>
+                            <li><a href="#">Kimono tops</a>
+                            </li>
+                            <li><a href="#">Bibs</a>
+                            </li>
+                            <li><a href="#">Jackets and Outwear</a>
+                            </li>
+                            <li><a href="#">Shoes and Socks</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Baby Gifts</a>
+                        <ul>
+                            <li><a href="#">Boys</a>
+                            </li>
+                            <li><a href="#">Girls</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Christening</a>
+                        <ul>
+                            <li><a href="#">Silver</a></li>
+                            <li><a href="#">All Christening</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Furniture</a>
+                        <ul>
+                            <li><a href="#">Cribs</a>
+                            </li>
+                            <li><a href="#">Changing Tables</a>
+                            </li>
+                            <li><a href="#">Bassinets</a>
+                            </li>
+                            <li><a href="#">Nursery Chairs</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Bedding</a>
+                        <ul>
+                            <li><a href="#">Boy Baby Bedding</a>
+                            </li>
+                            <li><a href="#">Girl Baby Bedding</a>
+                            </li>
+                            <li><a href="#">Neutral Baby Bedding</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Decor</a>
+                        <ul>
+                            <li><a href="#">Decor & Art</a>
+                            </li>
+                            <li><a href="#">Accesories</a>
+                            </li>
+                            <li><a href="#">Wall Organization</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Lighting</a>
+                        <ul>
+                            <li><a href="#">Table & Task Lamps</a>
+                            </li>
+                            <li><a href="#">Flushmounts</a>
+                            </li>
+                            <li><a href="#">Nightlights</a>
+                            </li>
+                            <li><a href="#">Floor Lamps</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Sale</a>
+                        <ul>
+                            <li><a href="#">Limited Time Offer</a>
+                            </li>
+                            <li><a href="#">Promotion Deals</a>
+                            </li>
+                            <li><a href="#">Clearance</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Brands</a>
+                        <ul>
+                            <li><a href="#">Chicco</a>
+                            </li>
+                            <li><a href="#">Fisher Price</a>
+                            </li>
+                            <li><a href="#">Carter's</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav> 
+        </div>
+    </header>
+    <main class="page-main">
+
+        <div>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                 <section class="slideshow__slide slide">
+                    <figure class="slide__bg">
+                        <img src="images/bb-slideshow-example-1.jpg" />
+                        <figcaption>Baby Dean - Wheaton, illinois</figcaption>
+                    </figure>
+                    <div class="slide__content">
+                        <a href="#" class="cta">
+                            <h2 class="cta__title">Crib Bedding Sale</h2>
+                            <p class="cta__description">Save up to 50% off on select crib bedding now through Memorial Day!</p>
+                            <span class="button button--primary">Shop Crib Beding</span>
+                        </a>
+                    </div>
+                </section>
+            </div>
+            <div class="mySlides fade">
+              <img src="images/slideshow22.jpg" style="width:100%;height:300px;">
+          </div>
+
+          <div class="mySlides fade">
+              <img src="images/slideshow_3.png" style="width:100%;height:300px;">
+          </div>
+
+      </div>
+
+      <br>
+      <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+      </div>
+  </div>
+
+  <h1 class="header-tags">Featured Products</h1>
+  <p class="featured-widget__description" align="center">Lorem ipsum dolor sit amet, eu ius erat commune, facer semper sea ad.</p>
+  <section class="featured-widget">
+    <div class="card">
+        <img src="images/bb_viewall.png" style="width:218;height:218px;"/>
+        <p class="card-txt">Featured Products</p>
+        <p class="price">Exclusive Deals!</p>
+        <p style="font-size: 1.2vh">Beautiful Beginnings Boutique</p>
+        <button onclick="myFunction()" style="background-color:#7494b7;color:white;">View All</button>
+    </div>
+    <div class="card">
+        <img src="images/clothes.jpg" alt="Dress" style="width:100%;"/>
+        <p class="card-txt">Hazel Ruffle Top and Capri Set</p>
+        <p class="price">$49.00 USD</p>
+        <p style="font-size: 1.2vh">Product By: Angel Dear</p>
+        <button onclick="addToCart()">Add to Cart</button>
+        
+    </div>
+    <div class="card">
+        <img src="images/crib.jpg" alt="Crib Set" style="width:100%" />
+        <p class="card-txt">Alexis Crib with Rose Garland</p>
+        <p class="price">$1,395.00 USD</p>
+        <p style="font-size: 1.2vh">Product By: Newport Cottages</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+    <div class="card">
+        <img src="images/stuffed-animal.jpg" alt="Stuffed Toy" style="width:100%" />
+        <p class="card-txt">Little G Stuffed Giraff</p>
+        <p class="price">$42.00 USD</p>
+        <p style="font-size: 1.2vh">Product By: Little Plush Toys </p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+</section>
+
+<div class="wysiwyg">
+    <h2 class="header-tags">We Love Babies</h2>
+    <p>Beautiful Beginnings offers finely crafted baby cribs as well as complete suites of nursery furniture, from traditional to contemporary. All of the finest names in crib bedding and baby blankets are featured with thousands of fabrics available to customize your baby crib. We offer everything you need to personalize your baby nursery with one of a kind nursery decor from distinctive lamps, clocks, wall hangings, picture frames and other decorative items.</p>
+    <p>To receive a gift from Beautiful Beginnings is a new mom’s biggest wish. There are so many unique and beautiful baby gifts to select from including baby burp cloths, designer diaper bags, baby clothes and many baby toys. Whether you are looking for Christening gifts, a baby shower gift, a newborn gift or even a gift for a child’s third birthday, we have many baby gifts to choose from. And to add to the pleasure, Beautiful Beginnings offers complimentary gift wrap in their "exclusive" gift wrap and daily shipping of gifts via UPS. One stop shopping for all family and friends. <a href="#">More About Us</a></p>
+    <p class="signature">Love, Debbie &amp; Jackie</p>
+</div>
+
+</main>
+
+<footer class="page-footer">
+    <div class="footer-top">
+
+        <div class="page-footer__column">
+            <div class="expander">
+                <h2 class="expander__toggle" >About Us</h2>
+                <div class="expander__panel">
+                    <ul class="link-list">
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Baby Registry</a></li>
+                        <li><a href="#">Store Location</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-footer__column">
+            <div class="expander">
+                <h2 class="expander__toggle" >Service</h2>
+                <div class="expander__panel">
+                    <ul class="link-list">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Live Chat</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-footer__column">
+            <div class="expander">
+                <h2 class="expander__toggle" >Shop</h2>
+                <div class="expander__panel">
+                    <ul class="link-list">
+                        <li><a href="#">Baby Apparel</a></li>
+                        <li><a href="#">Baby Gifts</a></li>
+                        <li><a href="#">Christening</a></li>
+                        <li><a href="#">Furniture</a></li>
+                        <li><a href="#">Bedding</a></li>
+                        <li><a href="#">Decor</a></li>
+                        <li><a href="#">Lighting</a></li>
+                        <li><a href="#">Sale</a></li>
+                        <li><a href="#">Brands</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-footer__column">
+            <div class="wysiwyg">
+                <h2 >Contact Us</h2>
+                <p class="mobile-grow"><strong style="text-decoration: underline;">Beautiful Beginnings: </strong></br><i class="fa fa-address-card"></i> 4472 Lawn Avenue Western Springs, IL, 60558</p>
+                <!--  <p class="mobile-grow"><strong style="text-decoration: underline;"> Phone: </strong><br> --><i class="fa fa-phone"></i> <strong> 708.246.1212</strong>
+                    <p class="mobile-grow"><strong style="text-decoration: underline;">Store Hours: </strong></i><br/><i class="fa fa-clock-o"></i> Weekday:10am-5:30pm<br/><i class="fa fa-clock-o"></i> Saturday: 10am-5:30pm<br/><i class="fa fa-clock-o"></i> Sunday: Closed</p>
+
+                </div>
+            </div>
+
+            <div class="page-footer__column">
+                <div class="site-social">
+                    <h2>Follow Us</h2>
+                    <ul class="social-list">
+                        <li>
+                            <a href="https://facebook.com/"><img id="social" src="images/social-facebook.png" alt="Facebook"></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/"><img id="social" src="images/social-twitter.png" alt="Twitter"></a>
+                        </li>
+                        <li>
+                            <a href="https://pintrest.com/"><img id="social" src="images/social-pintrest.png" alt="Pinterest" ></a>
+                        </li>
+                        <li>
+                            <a href="https://youtube.com/"><img id="social" src="images/social-youtube.png" alt="Youtube" ></a>
+                        </li>
+                        <li>
+                            <a href="https://google.com/"><img id="social"  src="images/social-google-plus.png" alt="Google Plus"></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="newsletter">
+                    <h2>Newsletter</h2>
+                    <p>Get the latest promotions and special offers delivered directly toyour inbox!</p>
+                    <form class="newsletter__form">
+                        <label for="siteNewsletterEmail" class="visually-hidden">Email Address</label>
+                        <input id="siteNewsletterEmail" type="text" placeholder="Email Address..." />
+                        <button class="button button--primary">Send</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="page-footer__column">
+                <div class="copyright">
+                    <p><span class="copyright__text">@2013 Beautiful Beginnings. All Rights Reserved</span> <a href="#">Site Map</a> <a href="#">Privacy Policy</a> <a href="#">Terms &amp; Conditions</a></p>
+                    <p class="ae-logo"><img src="images/powered-by-americaneagle.png" /> Web Site design by Americaneagle.com</p>
+                </div>
+            </div>
+
+            <div class="page-footer__column">
+                <div class="site-logo">
+                    <img src="images/bb-logo-2x.png">
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
